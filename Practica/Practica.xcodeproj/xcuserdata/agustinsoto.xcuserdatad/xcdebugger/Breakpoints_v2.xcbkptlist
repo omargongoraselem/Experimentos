@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Practica/Register.swift"
-            timestampString = "475900115.23322"
+            timestampString = "475975897.776093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "UIButton_Accept(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Practica/ViewController.swift"
-            timestampString = "475900160.129135"
+            filePath = "Practica/Register.swift"
+            timestampString = "475975897.776093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "UIButton_ResignKeyboard(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
