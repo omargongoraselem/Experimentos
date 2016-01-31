@@ -1,10 +1,19 @@
-//
-//  AppDelegate.swift
-//  Practica
-//
-//  Created by agustin soto on 29/01/16.
-//  Copyright © 2016 agustin soto. All rights reserved.
-//
+// Comentarios Prueba
+
+
+//1 EL login todavía que crees la clase en .swift, que sería lo que vendría siendo el .h y .m en objective c
+
+//2 El login todavía te falta que tenga los autolayouts, eso también te lo van a calificar
+
+//3 Tienes que poner en el login in boton trasnparente que abarque todas la pantalla el cual al hacer click fuera del teclado o de los uitextfield se quite el teclado automáticamiente, el código para quitar el teclado es : "uitexfield_tu_campo.resingfieldresponder"
+
+//4 Tienes que poner en el teclado en el boton inferior derecho que cuando estes en el uitexfield_Usuario te aparezca siguiente y en el de contraseña ir, esos los cambias en las propiedades del uitexfield, si seleccionas siguiente te debe activar el uitexfield_contrasenia, si seleccionas el boton de ir en el teclado primero debes de checar que tanto el uitexfield_usuario y uitexfield_contrasenia no esten vacíos, si es así debes de mostrar un mensaje que te diga debes de ingresar contraseña y/o usuario para poder iniciar sesión o algo asi, si los dos campos son válidos debes de iniciar ya con la petición http 
+
+//5 Aun no has incoropoado a este proyecto la librería de swift ni has puesto el "NombreProyecto-Bridging-Header.h" ahi es donde pones #import "nombre_libreria_en_objective_c.h"
+
+//6 En todos lados tienes que ocupar autolayouts, acuérdate que para los autolayouts son alineación en x,y, width y height
+
+//7 Cualquier duda que tengas xfa dime, en la noche
 
 import UIKit
 
