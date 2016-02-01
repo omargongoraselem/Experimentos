@@ -28,11 +28,17 @@
                                 <rect key="frame" x="65" y="102" width="247" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bDu-6Y-Znb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-uA-CWC">
                                 <rect key="frame" x="65" y="187" width="247" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hj4-eS-pwX"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOt-eq-2Fz">
                                 <rect key="frame" x="169" y="73" width="37" height="21"/>
@@ -129,12 +135,11 @@
                     <connections>
                         <outlet property="UITextField_Password" destination="Mfa-uA-CWC" id="1Qc-kQ-5kB"/>
                         <outlet property="UITextField_User" destination="5EE-mq-esI" id="jxN-Ys-XuO"/>
-                        <segue destination="ndi-Gn-bH0" kind="presentation" identifier="Protected" id="I8Y-Gi-u8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-27.5" y="421.5"/>
+            <point key="canvasLocation" x="-399.5" y="761.5"/>
         </scene>
         <!--Protected-->
         <scene sceneID="GqZ-nz-SKD">
@@ -173,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWD-3N-tnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-517.5" y="437.5"/>
+            <point key="canvasLocation" x="-822.5" y="767.5"/>
         </scene>
         <!--Register-->
         <scene sceneID="5f3-hg-FYU">
@@ -311,12 +316,11 @@
                         <outlet property="UITextField_Email" destination="MA5-ru-Xac" id="WCD-7R-def"/>
                         <outlet property="UITextField_Password" destination="lsL-XQ-isL" id="2RL-Yx-mUk"/>
                         <outlet property="UITextField_PasswordRepeat" destination="BHi-L0-rGd" id="xZ1-57-fjj"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="Register_Login" id="zau-MX-sWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuF-1j-BHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667.5" y="388.5"/>
+            <point key="canvasLocation" x="17.5" y="761.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CHu-0k-maY">
@@ -334,11 +338,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz4-bB-r7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1133" y="422"/>
+            <point key="canvasLocation" x="-1398" y="762"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="eqR-DT-C5l"/>
-        <segue reference="I8Y-Gi-u8f"/>
-    </inferredMetricsTieBreakers>
 </document>

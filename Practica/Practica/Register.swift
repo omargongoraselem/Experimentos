@@ -49,7 +49,7 @@ class Register: UIViewController, UITextFieldDelegate {
                     NSUserDefaults.standardUserDefaults().setObject(UserEmail, forKey: "UserEmail");
                     NSUserDefaults.standardUserDefaults().setObject(UserPassword, forKey: "UserPassword");
                     NSUserDefaults.standardUserDefaults().synchronize();
-                    performSegueWithIdentifier("Register_Login", sender: self)
+                    dismissViewControllerAnimated(true, completion: nil);
                     
                     Alerta("User Created");
                     
@@ -87,7 +87,7 @@ class Register: UIViewController, UITextFieldDelegate {
 
     @IBAction func UIButton_IHaveAnAccount(sender: AnyObject) {
         
-        performSegueWithIdentifier("Register_Login", sender: self);
+        dismissViewControllerAnimated(true, completion: nil);
         
     }
     /*
