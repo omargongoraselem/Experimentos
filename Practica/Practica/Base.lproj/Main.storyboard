@@ -340,5 +340,73 @@
             </objects>
             <point key="canvasLocation" x="-1398" y="762"/>
         </scene>
+        <!--Http-->
+        <scene sceneID="in5-4M-GRl">
+            <objects>
+                <viewController id="GkV-fj-vK7" customClass="Http" customModule="Practica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k8h-lT-J7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="kca-Gg-KQo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FFG-uj-28W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWg-hs-Aku">
+                                <rect key="frame" x="109" y="63" width="157" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3N-he-iLO">
+                                <rect key="frame" x="157" y="107" width="61" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="UIButton_GetData:" destination="GkV-fj-vK7" eventType="touchUpInside" id="hnc-hu-sQN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2r-ND-6Zf">
+                                <rect key="frame" x="152" y="156" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="5JF-5E-tFW"/>
+                                    <constraint firstAttribute="height" constant="21" id="TiF-5E-Ygx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7k-QY-oNM">
+                                <rect key="frame" x="150" y="206" width="75" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="K1n-yn-jMM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iWg-hs-Aku" firstAttribute="centerX" secondItem="FFG-uj-28W" secondAttribute="centerX" id="5u6-6t-Pft"/>
+                            <constraint firstItem="j2r-ND-6Zf" firstAttribute="top" secondItem="n3N-he-iLO" secondAttribute="bottom" constant="19" id="GfP-QI-9oL"/>
+                            <constraint firstItem="iWg-hs-Aku" firstAttribute="top" secondItem="k8h-lT-J7c" secondAttribute="bottom" constant="43" id="JQw-Wi-hxH"/>
+                            <constraint firstItem="j2r-ND-6Zf" firstAttribute="centerX" secondItem="D7k-QY-oNM" secondAttribute="centerX" id="Jyc-p1-Pwr"/>
+                            <constraint firstItem="D7k-QY-oNM" firstAttribute="top" secondItem="j2r-ND-6Zf" secondAttribute="bottom" constant="29" id="Nhi-Zr-GuL"/>
+                            <constraint firstItem="iWg-hs-Aku" firstAttribute="centerX" secondItem="n3N-he-iLO" secondAttribute="centerX" id="bXR-7l-Mvn"/>
+                            <constraint firstItem="D7k-QY-oNM" firstAttribute="leading" secondItem="FFG-uj-28W" secondAttribute="leading" constant="150" id="fj8-ds-BcM"/>
+                            <constraint firstItem="iWg-hs-Aku" firstAttribute="leading" secondItem="FFG-uj-28W" secondAttribute="leadingMargin" constant="93" id="hOs-Ef-LuX"/>
+                            <constraint firstItem="n3N-he-iLO" firstAttribute="top" secondItem="iWg-hs-Aku" secondAttribute="bottom" constant="14" id="sep-qP-zUp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="UILabel_CityName" destination="j2r-ND-6Zf" id="Vlu-sD-l8h"/>
+                        <outlet property="UILabel_CityTemperature" destination="D7k-QY-oNM" id="GCl-bK-rr7"/>
+                        <outlet property="UITextField_City" destination="iWg-hs-Aku" id="khV-WT-BXs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6D-ou-gB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1392.5" y="1674.5"/>
+        </scene>
     </scenes>
 </document>

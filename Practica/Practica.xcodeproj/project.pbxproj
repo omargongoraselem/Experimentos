@@ -16,6 +16,8 @@
 		3F37F7AE1C5BE719003E483C /* PracticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37F7AD1C5BE719003E483C /* PracticaUITests.swift */; };
 		3F5367091C5DA26600B34892 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5367081C5DA26600B34892 /* Register.swift */; settings = {ASSET_TAGS = (); }; };
 		3F53670D1C5EFD1E00B34892 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53670C1C5EFD1E00B34892 /* Protected.swift */; settings = {ASSET_TAGS = (); }; };
+		3F56B9931C5F3A0B007ED988 /* Http request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56B9921C5F3A0B007ED988 /* Http request.swift */; settings = {ASSET_TAGS = (); }; };
+		3F56B9961C5F3AA9007ED988 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56B9951C5F3AA9007ED988 /* Http.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3F37F7AF1C5BE719003E483C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5367081C5DA26600B34892 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		3F53670C1C5EFD1E00B34892 /* Protected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		3F56B9921C5F3A0B007ED988 /* Http request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Http request.swift"; sourceTree = "<group>"; };
+		3F56B9951C5F3AA9007ED988 /* Http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +108,13 @@
 				3F37F78D1C5BE719003E483C /* AppDelegate.swift */,
 				3F37F78F1C5BE719003E483C /* ViewController.swift */,
 				3F37F7911C5BE719003E483C /* Main.storyboard */,
+				3F56B9951C5F3AA9007ED988 /* Http.swift */,
 				3F53670C1C5EFD1E00B34892 /* Protected.swift */,
 				3F5367081C5DA26600B34892 /* Register.swift */,
 				3F37F7941C5BE719003E483C /* Assets.xcassets */,
 				3F37F7961C5BE719003E483C /* LaunchScreen.storyboard */,
 				3F37F7991C5BE719003E483C /* Info.plist */,
+				3F56B9941C5F3A18007ED988 /* http */,
 			);
 			path = Practica;
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 				3F37F7AF1C5BE719003E483C /* Info.plist */,
 			);
 			path = PracticaUITests;
+			sourceTree = "<group>";
+		};
+		3F56B9941C5F3A18007ED988 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				3F56B9921C5F3A0B007ED988 /* Http request.swift */,
+			);
+			name = http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 				3F53670D1C5EFD1E00B34892 /* Protected.swift in Sources */,
 				3F5367091C5DA26600B34892 /* Register.swift in Sources */,
 				3F37F7901C5BE719003E483C /* ViewController.swift in Sources */,
+				3F56B9931C5F3A0B007ED988 /* Http request.swift in Sources */,
 				3F37F78E1C5BE719003E483C /* AppDelegate.swift in Sources */,
+				3F56B9961C5F3AA9007ED988 /* Http.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
