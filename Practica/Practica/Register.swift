@@ -31,10 +31,10 @@ class Register: UIViewController, UITextFieldDelegate {
         }
         return true;
     }
+    
     @IBAction func UIButton_ResignKeyboard(sender: AnyObject) {
         resignFirstResponder() ;
         self.view.endEditing(true);
-        
     }
 
     @IBAction func UIButton_Accept(sender: UIButton) {
@@ -45,7 +45,7 @@ class Register: UIViewController, UITextFieldDelegate {
               if (UserEmail! .containsString("@")){
                    if (UITextField_Password.text == UITextField_PasswordRepeat.text && UserPassword != ""){
                     
-                    let UserPassword = UITextField_Password.text;
+                   
                     NSUserDefaults.standardUserDefaults().setObject(UserEmail, forKey: "UserEmail");
                     NSUserDefaults.standardUserDefaults().setObject(UserPassword, forKey: "UserPassword");
                     NSUserDefaults.standardUserDefaults().synchronize();
@@ -67,9 +67,7 @@ class Register: UIViewController, UITextFieldDelegate {
         }else{
           Alerta("Missing User Name");
           UITextField_Email.becomeFirstResponder();
-         
         }
-        
     }
     
     

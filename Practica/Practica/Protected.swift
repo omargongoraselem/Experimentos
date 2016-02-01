@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  Protected.swift
 //  Practica
 //
 //  Created by agustin soto on 31/01/16.
@@ -8,14 +8,27 @@
 
 import UIKit
 
-class Login: UIViewController {
+class Protected: UIViewController, UITextFieldDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var Logged = NSUserDefaults.standardUserDefaults().boolForKey("User Logged In");
+        if Logged{
+            
+        }
+        else{
+            
+            performSegueWithIdentifier("Login", sender: nil);
+            
+        }
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func UIButton_Logout(sender: UIButton) {
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "User Logged In");
+        performSegueWithIdentifier("Login", sender: nil);
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

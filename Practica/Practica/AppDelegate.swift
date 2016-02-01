@@ -3,7 +3,7 @@
 
 //1 EL login todavía que crees la clase en .swift, que sería lo que vendría siendo el .h y .m en objective c
 
-//2 El login todavía te falta que tenga los autolayouts, eso también te lo van a calificar
+//2 El login todavía te falta que tenga los autolayouts, eso también te lo van a calificar --- ya los puse 
 
 //3 Tienes que poner en el login in boton trasnparente que abarque todas la pantalla el cual al hacer click fuera del teclado o de los uitextfield se quite el teclado automáticamiente, el código para quitar el teclado es : "uitexfield_tu_campo.resingfieldresponder"
 
