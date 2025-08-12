@@ -42,6 +42,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['dist/**/*', 'logs/**/*', 'public/**/*', 'release.config.js'],
+    ignores: ['logs/**/*', 'public/**/*', 'release.config.js'],
   }
 );
